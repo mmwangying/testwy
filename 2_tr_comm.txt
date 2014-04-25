@@ -1,0 +1,6 @@
+## 简单的英文拼写检查程序。现有一输入文件，内容为大小写混杂的英文单词，以一个或多个空格分隔。另有一词典文件，每行一个单词，小写。请用linux命令找出输入文件中所有不在词典内的单词，不区分大小写，输出内容也不需要区分大小写。（提示：参考tr和comm命令） ##
+Cat fileA | tr [[:upper:]] [[:lower:]] | tr –s [[:space:]] ‘\n’ | sort –u –o fileA
+
+Cat fileB | tr –s [[:space:]] ‘\n’ | Sort –u –o fileB
+
+comm -2 -3 fileA fileB

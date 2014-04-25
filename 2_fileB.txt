@@ -1,0 +1,5 @@
+   clock
+ new
+    red
+   apple
+summer
