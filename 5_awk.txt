@@ -1,2 +1,0 @@
-## 文件内容包括（ip地址，refer，useragent，操作1时间，操作2时间），统计文件内总操作时间（操作1时间+操作2时间）值的分布情况，按秒量化，输出（使用awk） ##
-cat ipdata | awk -F ':' '{print $4+$5}' | awk -F '.' '{a[$1]++}END{for(i in a){print i,a[i]}}'
