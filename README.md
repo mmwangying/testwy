@@ -1,2 +1,4 @@
 testwy
 ======
+
+django test application
