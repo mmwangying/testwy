@@ -1,4 +1,0 @@
-testwy
-======
-
-django test application
