@@ -23,13 +23,3 @@ class PollTest(TestCase):
         c = Client()
         response = c.post('/admin/', {'username': 'admin', 'password': 'dd'})
         self.assertEqual(response.status_code, 200)
-        response = c.get('/admin/')
-        self.assertEqual(response.context['user'],"sd")
-def suite():
-    suite = unittest.TestSuite()
-    suite.addTest(PollTest("test_lion_was_published_recently"))
-    suite.addTest(PollTest("test_cat_was_published_recently"))
-    return suite
-
-if __name__ == "__main__":
-    unittest.TextTestRunner().run(suite())   

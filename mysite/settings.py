@@ -36,7 +36,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'polls'
+    'polls',
+    'testProject'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -68,7 +69,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'CCT'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
@@ -94,5 +95,5 @@ TEMPLATE_LOADERS = (
 
 TEST_RUNNER = (
     #'testProject.runner.run_tests'
-    'django.test.runner.DiscoverRunner'
+    'django.test.simple.DjangoTestSuiteRunner'
 )
